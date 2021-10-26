@@ -1,5 +1,5 @@
 
-# My screeps AI
+# Screeps-Typescript-Starer-Modded
 
 ![](https://screeps.com/images/logotype-animated.svg)
 
@@ -18,7 +18,7 @@ Logger from ([resir014](https://github.com/resir014/Stonehenge))
   ```
   in the Console.
 
-## This is all WIP and there will be no guarantee that commited code is working ;)
+# This is a slightly modded Version, so it fits to my dependings. Feel free to use it.
 
 #Helper
 +-------------------------------------------------------------------------------------+

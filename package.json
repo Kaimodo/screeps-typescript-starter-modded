@@ -1,7 +1,7 @@
 {
-  "name": "Screeps21_kAI3",
+  "name": "screeps-typescript-starter-modded",
   "version": "1.0.0",
-  "description": "My Screeps AI",
+  "description": "Screeps TS starter slightly modded",
   "main": "index.js",
   "//": "If you add or change the names of destinations in screeps.json, make sure you update these scripts to reflect the changes",
   "scripts": {
@@ -21,16 +21,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kaimodo/Screeps21_kAI3.git"
+    "url": "git+https://github.com/Kaimodo/screeps-typescript-starter-modded.git"
   },
   "author": "",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/Kaimodo/Screeps21_kAI3/issues"
+    "url": "https://github.com/Kaimodo/screeps-typescript-starter-modded/issues"
   },
-  "homepage": "https://github.com/Kaimodo/Screeps21_kAI3#readme",
+  "homepage": "https://github.com/Kaimodo/screeps-typescript-starter-modded#readme",
   "engines": {
-    "node": "10.x || 12.x"
+    "node": "8.x || 12.x"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
