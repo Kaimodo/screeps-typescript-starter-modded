@@ -1,43 +1,46 @@
-import { ErrorMapper } from "utils/ErrorMapper";
+import { ErrorMapper } from "tools/ErrorMapper";
 
-declare global {
-  /*
-    Example types, expand on these or remove them and add your own.
-    Note: Values, properties defined here do no fully *exist* by this type definiton alone.
-          You must also give them an implemention if you would like to use them. (ex. actually setting a `role` property in a Creeps memory)
+import * as Profiler from "screeps-profiler";
+import { USE_PROFILER } from "config";
 
-    Types added in this `global` block are in an ambient, global context. This is needed because `main.ts` is a module file (uses import or export).
-    Interfaces matching on name from @types/screeps will be merged. This is how you can extend the 'built-in' interfaces from @types/screeps.
-  */
-  // Memory extension samples
-  interface Memory {
-    uuid: number;
-    log: any;
-  }
+import * as Inscribe from "screeps-inscribe";
 
-  interface CreepMemory {
-    role: string;
-    room: string;
-    working: boolean;
-  }
+import * as Logger from "tools/logger/logger";
+import {ENABLE_DEBUG_MODE} from "config";
 
-  // Syntax for adding proprties to `global` (ex "global.log")
-  namespace NodeJS {
-    interface Global {
-      log: any;
-    }
-  }
+import * as Tools from "tools/tools"
+
+import { ConsoleCommands } from "tools/consolecommands";
+
+//New Script loaded
+console.log(`[${Inscribe.color("New Script loaded", "red")}]`);
+
+/*
+// Log Info
+if (Game.time % 25 === 0) {
+  Logger.log.info(Inscribe.color(room.name + "| E: "+ Game.rooms[room.name].energyAvailable + "| Har: " + SpawnManager.harvesters.length + "| Bui: "+ SpawnManager.builders.length + "| Upg: " + SpawnManager.upgraders.length +"|", "skyblue"));
 }
+*/
+if (USE_PROFILER) {
+  Logger.log.info("Profiler an: "+ USE_PROFILER);
+  Profiler.enable();
+}
+
+
 
 // When compiling TS to JS and bundling with rollup, the line numbers and file names in error messages change
 // This utility uses source maps to get the line numbers and file names of the original, TS source code
 export const loop = ErrorMapper.wrapLoop(() => {
-  console.log(`Current game tick is ${Game.time}`);
+  Profiler.wrap(() => {
+    global.cc = ConsoleCommands;
+    console.log(`Current game tick is ${Game.time}`);
 
-  // Automatically delete memory of missing creeps
-  for (const name in Memory.creeps) {
-    if (!(name in Game.creeps)) {
-      delete Memory.creeps[name];
+    // Automatically delete memory of missing creeps
+    for (const name in Memory.creeps) {
+      if (!(name in Game.creeps)) {
+        delete Memory.creeps[name];
+      }
     }
-  }
+    Tools.log_info()
+  });
 });
