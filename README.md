@@ -1,13 +1,21 @@
 
 # Screeps-Typescript-Starer-Modded
 
-![](https://screeps.com/images/logotype-animated.svg)
+![ ](https://screeps.com/images/logotype-animated.svg)
 
 # What me added
 
 Screeps-Inscribe from ([resir014](https://github.com/resir014/screeps-inscribe))
 
 Logger from ([resir014](https://github.com/resir014/Stonehenge))
+
+Traveler from ([bonzaiferroni](https://github.com/bonzaiferroni/Traveler)) - not working atm.
+
+JS2FlowChart from ([Bogdan-Lyashenko](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart))
+
+## Info 4 JS2Flow
+
+JS2Flow throws some errors in the way i use it. i couldn't find out how to use it "correct". I start it via npm which executes a Powershell-Script. But basically it works. There is some error with "optional chaining" in flow2js. i tryed to install those plugins manualy but it won't work. Well, this is thought to use with js not ts...
 
 ## Console Commands
 
@@ -18,28 +26,20 @@ Logger from ([resir014](https://github.com/resir014/Stonehenge))
   ```
   in the Console.
 
-# This is a slightly modded Version, so it fits to my dependings. Feel free to use it.
+# This is a slightly modded Version, so it fits to my depends. Feel free to use it.
 
-#Helper
-+-------------------------------------------------------------------------------------+
-|R |  R       |  C |  S |  E  | R          | W  | T |  S |  L |  E |  L |  T |  O |  P|
-|C |  o       |  o |  p |  x  | a          | a  | o |  t |  i |  x |  a |  e |  b |  S|
-|L |  a       |  n |  a |  t  | m          | l  | w |  o |  n |  t |  b |  t |  s |  p|
-|  |  d	      |  t |  w |  e  | p          | l  | e |  r |  k |  r |  o |  m |  e |  a|
-|  |          |  a |  n |  n  | a          | s  | r |  a |    |  a |  r |  i |  r |  w|
-|  |          |  i |	  |  s  | r			     |    |   |  g |    |  k |	y |  n |  v |  n|
-|-------------------------------------------------------------------------------------+
-|0	|  0			 |  5	|  1 |  0	 |  0			   | 0	|  0|	 0 |  0	|  0 |  0	|  0 |  0	|  0|
-|1	|  200		 |  5	|  1 |  0	 |  0			   | 0	|  0|	 0 |  0	|  0 |  0	|  0 |  0	|  0|
-|2	|  45			 |  5	|  1 |  5	 |  300000	 | 1	|  0|	 0 |  0	|  0 |  0	|  0 |  0	|  0|
-|3	|  135		 |  5	|  1 |  10 |	1000000	 | 1	|  1|	 0 |  0	|  0 |  0	|  0 |  0	|  0|
-|4	|  405		 |  5	|  1 |  20 |	3000000	 | 1	|  1|	 1 |  0	|  0 |  0	|  0 |  0	|  0|
-|5	|  1215000 |	5	|  1 |  30 |	10000000 | 1	|  2|	 1 |  2	|  0 |  0	|  0 |  0	|  0|
-|6	|  3645000 |	5	|  1 |  40 |	30000000 | 1	|  2|	 1 |  3	|  1 |  3	|  1 |  0	|  0|
-|7	|  10935000|  5	|  2 |  50 |	100000000| 1	|  3|	 1 |  4	|  1 |  6	|  1 |  0	|  0|
-|8	|  99999999|	5	|  3 |  60 |	300000000| 1	|  6|	 1 |  6	|  1 |  10|  1 |  1	|  1|
-+-------------------------------------------------------------------------------------+
-*/
+## Helper
+
+|  RCL  |  ROAD   | Container | Spawn | Extension | Rampart | Walls | Tower | Storage | Link  | Extrakt |  Lab  | Terminal | Observe | P-Spawn |
+| :---: | :-----: | :-------: | :---: | :-------: | :-----: | :---: | :---: | :-----: | :---: | :-----: | :---: | :------: | :-----: | :-----: |
+|   1   |   200   |     5     |   1   |     0     |    0    |   0   |   0   |    0    |   0   |    0    |   0   |    0     |    0    |    0    |
+|   2   |   45k   |     5     |   1   |     5     |  300k   |   1   |   0   |    0    |   0   |    0    |   0   |    0     |    0    |    0    |
+|   3   |  135k   |     5     |   1   |    10     |   1m    |   1   |   1   |    0    |   0   |    0    |   0   |    0     |    0    |    0    |
+|   4   |  405k   |     5     |   1   |    20     |   3m    |   1   |   1   |    1    |   0   |    0    |   0   |    0     |    0    |    0    |
+|   5   | 1.215m  |     5     |   1   |    30     |   1b    |   1   |   2   |    1    |   2   |    0    |   0   |    0     |    0    |    0    |
+|   6   | 3.645m  |     5     |   1   |    40     |   3b    |   1   |   2   |    1    |   3   |    1    |   3   |    1     |    0    |    0    |
+|   7   | 1.0935b |     5     |   1   |    50     |   1t    |   1   |   3   |    1    |   4   |    1    |   6   |    1     |    0    |    0    |
+|   8   | 9.999b  |     5     |   1   |    60     |   3t    |   1   |   6   |    1    |   6   |    1    |  10   |    1     |    1    |    1    |
 
 # Origin from here
 

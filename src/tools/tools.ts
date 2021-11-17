@@ -21,4 +21,70 @@ export function ClearNonExistingCreeMemory() {
     }
   }
 }
+/**
+ * clear Memory
+ * @export _clearMemory
+ */
+ export function _clearMemory(): void {
+  for (const name in Memory.flags) {
+    if (!(name in Game.flags)) {
+      delete Memory.flags[name];
+    }
+  }
+  for (const name in Memory.spawns) {
+    if (!(name in Game.spawns)) {
+      delete Memory.spawns[name];
+    }
+  }
+  for (const name in Memory.creeps) {
+    if (!(name in Game.creeps)) {
+      delete Memory.creeps[name];
+    }
+  }
+  for (const name in Memory.rooms) {
+    if (!(name in Game.rooms)) {
+      delete Memory.rooms[name];
+    }
+  }
+}
 
+/**
+ * Generate Pixel if Bucket >= number
+ * @export generatePixel
+ * @param bucketHight The Amount of minimal Bucket
+ */
+ export function generatePixel(bucketHight: number): void {
+  if (Game.cpu.bucket >= bucketHight) {
+      Game.cpu.generatePixel();
+  }
+}
+
+/**
+ * Creates a Link to the given Room
+ * @export roomLink
+ * @param roomName The Room name
+ * @returns Link
+ */
+export function roomLink(roomName: string): string {
+  return `<a href="https://screeps.com/a/#!/room/${Game.shard.name}/${roomName}">${roomName}</a>`;
+}
+
+/**
+ * Does the function with each Creep.
+ * @export forEachCreep
+ * @param func The given Function
+ */
+export const forEachCreep = (func: (item: Creep) => void): void => {
+  Object.values(Game.creeps).forEach((creep) => func(creep));
+};
+
+/**
+ * Get the average distance between Start and End point.
+ * @export distance
+ * @param {{ x: number; y: number }} start Start Position (x,y)
+ * @param {{ x: number; y: number }} end End Position (x,y)
+ * @return {*}  {number} The distance between both points as Number
+ */
+export function distance(start: { x: number; y: number }, end: { x: number; y: number }): number {
+  return Math.max(Math.abs(start.x - end.x), Math.abs(start.y - end.y));
+}
