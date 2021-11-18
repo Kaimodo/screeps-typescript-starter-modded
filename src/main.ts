@@ -13,8 +13,12 @@ import * as Tools from "tools/tools"
 
 import { ConsoleCommands } from "tools/consolecommands";
 
+import { Emoji } from './tools/Emoji';
+
+
+
 //New Script loaded
-console.log(`[${Inscribe.color("New Script loaded", "red")}]`);
+console.log(`[${Inscribe.color("New Script loaded", "red")}] ${Emoji.reload}`);
 
 /*
 // Log Info
@@ -27,17 +31,6 @@ if (USE_PROFILER) {
   Profiler.enable();
 }
 
-try {
-  const name = process.env.npm_package_name;
-  const version = process.env.npm_package_version;
-  if (!Memory.version || Memory.version !== version) {
-    Memory.version = version;
-    console.log(`${String(name)} ${String(version)}`);
-  }
-} catch (error) {
-  console.log(error);
-}
-
 // Get Script loading time
 const elapsedCPU = Game.cpu.getUsed() - startCpu;
 
@@ -48,7 +41,16 @@ console.log(`[${Inscribe.color("Script Loading needed: ", "skyblue") + elapsedCP
 export const loop = ErrorMapper.wrapLoop(() => {
   Profiler.wrap(() => {
 
-
+    try {
+      const name = process.env.npm_package_name;
+      const version = process.env.npm_package_version;
+      if (!Memory.version || Memory.version !== version) {
+        Memory.version = version;
+        console.log(`${String(name)} ${String(version)}`);
+      }
+    } catch (error) {
+      console.log(error);
+    }
 
 
     global.cc = ConsoleCommands;

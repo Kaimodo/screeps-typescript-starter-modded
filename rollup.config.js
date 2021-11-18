@@ -9,8 +9,8 @@ import visualizer from "rollup-plugin-visualizer";
 
 const Global = `var process = {
   env: {
-    npm_package_name: ${process.env.npm_package_name},
-    npm_package_versino: ${process.env.npm_package_version}
+    npm_package_name: "${process.env.npm_package_name}",
+    npm_package_versino: "${process.env.npm_package_version}"
   }
 }`;
 
@@ -42,4 +42,4 @@ export default {
                 sourcemap: true,
                 template: "treemap"})
   ]
-}
+};

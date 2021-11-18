@@ -31,5 +31,14 @@
     "port": 21025,
     "path": "/",
     "branch": "main"
+  },
+  "onlinepserver": {
+    "email": "username",
+    "password": "Password",
+    "protocol": "http",
+    "hostname": "1.2.3.4",
+    "port": 21025,
+    "path": "/",
+    "branch": "main"
   }
 }
