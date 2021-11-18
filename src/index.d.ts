@@ -1,5 +1,6 @@
 // Game Memory
 interface Memory {
+    version?: string;
     uuid: number;
     log: any;
 }

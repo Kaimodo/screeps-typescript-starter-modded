@@ -7,6 +7,14 @@ import typescript from 'rollup-plugin-typescript2';
 import screeps from 'rollup-plugin-screeps';
 import visualizer from "rollup-plugin-visualizer";
 
+const Global = `var process = {
+  env: {
+    npm_package_name: ${process.env.npm_package_name},
+    npm_package_versino: ${process.env.npm_package_version}
+  }
+}`;
+
+
 let cfg;
 const dest = process.env.DEST;
 if (!dest) {
@@ -20,7 +28,8 @@ export default {
   output: {
     file: "dist/main.js",
     format: "cjs",
-    sourcemap: true
+    sourcemap: true,
+    banner: Global
   },
 
   plugins: [

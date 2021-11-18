@@ -27,6 +27,17 @@ if (USE_PROFILER) {
   Profiler.enable();
 }
 
+try {
+  const name = process.env.npm_package_name;
+  const version = process.env.npm_package_version;
+  if (!Memory.version || Memory.version !== version) {
+    Memory.version = version;
+    console.log(`${String(name)} ${String(version)}`);
+  }
+} catch (error) {
+  console.log(error);
+}
+
 // Get Script loading time
 const elapsedCPU = Game.cpu.getUsed() - startCpu;
 
@@ -36,6 +47,10 @@ console.log(`[${Inscribe.color("Script Loading needed: ", "skyblue") + elapsedCP
 // This utility uses source maps to get the line numbers and file names of the original, TS source code
 export const loop = ErrorMapper.wrapLoop(() => {
   Profiler.wrap(() => {
+
+
+
+
     global.cc = ConsoleCommands;
     console.log(`Current game tick is ${Game.time}`);
 
