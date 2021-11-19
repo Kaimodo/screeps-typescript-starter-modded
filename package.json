@@ -1,16 +1,15 @@
 {
   "name": "screeps-typescript-starter-modded",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Screeps TS starter slightly modded",
   "main": "index.js",
   "//": "If you add or change the names of destinations in screeps.json, make sure you update these scripts to reflect the changes",
   "scripts": {
     "lint": "eslint \"src/**/*.ts\"",
     "build": "rollup -c",
-    "patch-main": "npm version patch && npm run push-main",
-    "patch-pserver": "npm version patch && npm run push-pserver",
-    "patch-onlinepserver": "npm version patch && npm run push-onlinepserver",
-    "release": "npm version minor && npm run push-main",
+    "Upd Patch": "npm version patch",
+    "Upd Minor": "npm version minor",
+    "Upd Mayor": "npm version mayor",
     "push-main": "rollup -c --environment DEST:main",
     "push-pserver": "rollup -c --environment DEST:pserver",
     "push-Onlinepserver": "rollup -c --environment DEST:onlinepserver",
@@ -21,6 +20,7 @@
     "test-integration": "echo 'See docs/in-depth/testing.md for instructions on enabling integration tests'",
     "watch-main": "rollup -cw --environment DEST:main",
     "watch-pserver": "rollup -cw --environment DEST:pserver",
+    "watch-Onlinepserver": "rollup -cw --environment DEST:onlinepserver",
     "watch-season": "rollup -cw --environment DEST:season",
     "watch-sim": "rollup -cw --environment DEST:sim",
     "Create Flow-Chart": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./createSVG.ps1"
@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-multi-entry": "^3.0.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@types/chai": "^4.1.6",
@@ -53,8 +54,6 @@
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "@typescript-eslint/typescript-estree": "^4.29.1",
-    "@types/screeps-profiler": "^1.2.0",
-    "screeps-profiler": "^2.0.1",
     "chai": "^4.2.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
@@ -66,12 +65,13 @@
     "mocha": "^5.2.0",
     "prettier": "^2.3.2",
     "rollup": "^2.56.2",
-    "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-nodent": "^0.2.2",
     "rollup-plugin-screeps": "^1.0.1",
     "rollup-plugin-typescript2": "^0.30.0",
     "rollup-plugin-visualizer": "^5.5.2",
+    "screeps-profiler": "^2.0.1",
     "sinon": "^6.3.5",
     "sinon-chai": "^3.2.0",
     "ts-node": "^10.2.0",
@@ -79,8 +79,8 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "source-map": "~0.6.1",
     "screeps-inscribe": "^0.2.0",
+    "source-map": "~0.6.1",
     "traveler": "^0.1.0"
   }
 }

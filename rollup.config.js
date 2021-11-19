@@ -6,10 +6,10 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import screeps from 'rollup-plugin-screeps';
 import visualizer from "rollup-plugin-visualizer";
+import json from '@rollup/plugin-json';
 
 const Global = `var process = {
   env: {
-    npm_package_name: "${process.env.npm_package_name}",
     npm_package_versino: "${process.env.npm_package_version}"
   }
 }`;
@@ -33,6 +33,7 @@ export default {
   },
 
   plugins: [
+    json(),
     clear({ targets: ["dist"] }),
     resolve({ rootDir: "src" }),
     commonjs(),

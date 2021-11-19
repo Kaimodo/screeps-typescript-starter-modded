@@ -51,12 +51,23 @@ export const Emoji = {
 };
 
 export const Splash = () => {
+
+	try {
+        const version = process.env.npm_package_version;
+        if (!Memory.version || Memory.version !== version) {
+          Memory.version = version;
+        }
+    } catch (error) {
+      console.log(error);
+    }
+
+
 	console.log(`<p style="color:#AE81FF">
  _____ _____ _____ _____ _____ _____ _____    _____    __ _____ _____
 |   __|     | __  |   __|   __|  _  |   __|  |     |__|  | __  |  |  |
 |__   |   --|    -|   __|   __|   __|__   |  |  |  |  |  | __ -|    -|
 |_____|_____|__|__|_____|_____|__|  |_____|  |_____|_____|_____|__|__|
-Version:    |   Build Time:
+				Version: ${Memory.version}
 </p>
 `);
 };
