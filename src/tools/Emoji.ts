@@ -80,8 +80,3 @@ export const Splash = () => {
 </p>
 `);
 };
-
-
-
-
-

@@ -8,6 +8,7 @@ import screeps from 'rollup-plugin-screeps';
 import visualizer from "rollup-plugin-visualizer";
 import json from '@rollup/plugin-json';
 import versionInjector from 'rollup-plugin-version-injector';
+import progress from 'rollup-plugin-progress';
 
 const Global = `var process = {
   env: {
@@ -43,6 +44,9 @@ export default {
     visualizer({filename: "Screeps-Visual.html",
                 sourcemap: true,
                 template: "treemap"}),
-    versionInjector()
+    versionInjector(),
+    progress({
+      clearLine: false // default: true
+    })
   ]
 };
