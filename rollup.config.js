@@ -7,6 +7,7 @@ import typescript from 'rollup-plugin-typescript2';
 import screeps from 'rollup-plugin-screeps';
 import visualizer from "rollup-plugin-visualizer";
 import json from '@rollup/plugin-json';
+import versionInjector from 'rollup-plugin-version-injector';
 
 const Global = `var process = {
   env: {
@@ -41,6 +42,7 @@ export default {
     screeps({config: cfg, dryRun: cfg == null}),
     visualizer({filename: "Screeps-Visual.html",
                 sourcemap: true,
-                template: "treemap"})
+                template: "treemap"}),
+    versionInjector()
   ]
 };

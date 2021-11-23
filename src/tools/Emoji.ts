@@ -51,23 +51,42 @@ export const Emoji = {
 };
 
 export const Splash = () => {
-
 	try {
-        const version = process.env.npm_package_version;
-        if (!Memory.version || Memory.version !== version) {
-          Memory.version = version;
-        }
-    } catch (error) {
-      console.log(error);
-    }
-
+		const version = `[VI]{version}[/VI]`;
+		const date = `[VI]{date}[/VI]`;
+		  if (!Memory.version || Memory.version !== version) {
+			Memory.version = version;
+		  }
+		  if (!Memory.date || Memory.date !== date) {
+			Memory.date = date;
+		  }
+		} catch (error) {
+		console.log(error);
+	  }
 
 	console.log(`<p style="color:#AE81FF">
+
+╔═══╗
+║╔═╗║
+║╚══╗╔══╗╔═╗╔══╗╔══╗╔══╗╔══╗
+╚══╗║║╔═╝║╔╝║╔╗║║╔╗║║╔╗║║══╣
+║╚═╝║║╚═╗║║ ║║═╣║║═╣║╚╝║╠══║
+╚═══╝╚══╝╚╝ ╚══╝╚══╝║╔═╝╚══╝
+                    ║║
+                    ╚╝
+=========================================================
+= Version: ${Memory.version}  BuildDate: ${Memory.date} =
+=========================================================
+</p>
+`);
+};
+/**
  _____ _____ _____ _____ _____ _____ _____    _____    __ _____ _____
 |   __|     | __  |   __|   __|  _  |   __|  |     |__|  | __  |  |  |
 |__   |   --|    -|   __|   __|   __|__   |  |  |  |  |  | __ -|    -|
 |_____|_____|__|__|_____|_____|__|  |_____|  |_____|_____|_____|__|__|
-				Version: ${Memory.version}
-</p>
-`);
-};
+*/
+
+
+
+

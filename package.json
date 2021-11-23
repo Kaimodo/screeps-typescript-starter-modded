@@ -1,6 +1,6 @@
 {
   "name": "screeps-typescript-starter-modded",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Screeps TS starter slightly modded",
   "main": "index.js",
   "//": "If you add or change the names of destinations in screeps.json, make sure you update these scripts to reflect the changes",
@@ -70,6 +70,7 @@
     "rollup-plugin-nodent": "^0.2.2",
     "rollup-plugin-screeps": "^1.0.1",
     "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-version-injector": "^1.3.3",
     "rollup-plugin-visualizer": "^5.5.2",
     "screeps-profiler": "^2.0.1",
     "sinon": "^6.3.5",
