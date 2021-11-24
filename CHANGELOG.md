@@ -2,6 +2,12 @@
 v1.2.7
 [2021-11-24]
 
+### Features
+
+*
+changed Package.json
+([`e6cdd8b`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/e6cdd8beefe7b080ce68f313bdd3e1527214ce80))
+2-Files changed|16-Insertions|3-Deletions
 
 
 
