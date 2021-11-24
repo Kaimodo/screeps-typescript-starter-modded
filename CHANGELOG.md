@@ -5,6 +5,10 @@ v1.2.9
 ### Features
 
 *
+Auto Changelog should now run as expected
+([`ced1fc1`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/ced1fc1766fb193cb44ec85acedd118836a60d9e))
+1-Files changed|18-Insertions|1-Deletions
+*
 Changed ReadMe and Packj
 ([`cae72a1`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/cae72a1e36bcd5e0353b9e5c9653f5a82f812085))
 2-Files changed|3-Insertions|1-Deletions
