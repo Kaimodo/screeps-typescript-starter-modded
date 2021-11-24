@@ -1,9 +1,20 @@
 #
-v1.2.5
+v1.2.6
+[2021-11-24]
+
+
+
+
+#
+v1.2.6
 [2021-11-24]
 
 ### Features
 
+*
+Auto-Chagelog
+([`1c34f80`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/1c34f80bcbdd7b947d0a072038ef9d84289c8c50))
+2-Files changed|8-Insertions|0-Deletions
 *
 Visualizer
 ([`6f1957d`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/6f1957d8983cf4c69e328a6b7333d5874f432a9d))
