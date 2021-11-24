@@ -21,7 +21,7 @@
     "rollup-help": "rollup --help",
     "lint": "eslint \"src/**/*.ts\"",
     "build": "rollup -c",
-    "Upd Patch": "npm version patch",
+    "Upd Patch": "git push && npm version patch",
     "Upd Minor": "npm version minor",
     "Upd Mayor": "npm version mayor",
     "push-main": "rollup -c --environment DEST:main",
@@ -39,7 +39,7 @@
     "watch-season": "rollup -cw --environment DEST:season",
     "watch-sim": "rollup -cw --environment DEST:sim",
     "Create Flow-Chart": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./createSVG.ps1",
-    "changelog": "auto-changelog --template changelog-template.hbs -p -u --commit-limit false && git push && npm version patch",
+    "changelog": "auto-changelog --template changelog-template.hbs -p -u --commit-limit false",
     "changelog-debug": "auto-changelog --template changelog-template.hbs -p --template json --output changelog-data.json"
   },
   "auto-changelog": {
