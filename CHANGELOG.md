@@ -5,6 +5,10 @@ v1.2.8
 ### Features
 
 *
+package changed
+([`c12beb0`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/c12beb03a764cf69ab8476a8858381ba11cf22e1))
+2-Files changed|23-Insertions|2-Deletions
+*
 Changed ReadMe
 ([`9a9d1b8`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/9a9d1b8f04643ab3508570cf970549bd1487986c))
 1-Files changed|2-Insertions|0-Deletions
