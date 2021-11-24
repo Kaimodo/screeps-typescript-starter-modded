@@ -12,8 +12,8 @@
   }}
     *
     {{subject}}
-    ([`{{shorthash}}`]({{href}})) - Files changed:
-    {{files}}
+    ([`{{shorthash}}`]({{href}}))
+    {{files}}-Files changed|{{insertions}}-Insertions|{{deletions}}-Deletions
   {{/commit-list}}
 
   {{! use fix: or Fix: }}
@@ -26,6 +26,7 @@
     *
     {{subject}}
     ([`{{shorthash}}`]({{href}}))
+    {{files}}-Files changed|{{insertions}}-Insertions|{{deletions}}-Deletions
   {{/commit-list}}
 
   {{! user break: or Break: }}
@@ -38,6 +39,7 @@
     *
     {{subject}}
     ([`{{shorthash}}`]({{href}}))
+    {{files}}-Files changed|{{insertions}}-Insertions|{{deletions}}-Deletions
   {{/commit-list}}
 
 {{/each}}
