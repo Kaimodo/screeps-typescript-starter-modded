@@ -18,6 +18,8 @@ Auto-changelog from ([CookPete](https://github.com/CookPete/auto-changelog))
 
 JS2Flow throws some errors in the way i use it. i couldn't find out how to use it "correct". I start it via npm which executes a Powershell-Script. But basically it works. There is some error with "optional chaining" in flow2js. i tryed to install those plugins manualy but it won't work. Well, this is thought to use with js not ts...
 
+## Info 4 Auto-Changelog
+
 ## Console Commands
 
 Commands are defined in Consolecommands.ts
