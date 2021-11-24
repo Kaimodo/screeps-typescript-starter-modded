@@ -2,6 +2,12 @@
 v1.2.5
 [2021-11-24]
 
+### Features
+
+*
+Visualizer
+([`6f1957d`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/6f1957d8983cf4c69e328a6b7333d5874f432a9d))
+1-Files changed|2-Insertions|0-Deletions
 
 
 
