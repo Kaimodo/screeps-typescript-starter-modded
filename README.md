@@ -20,6 +20,8 @@ JS2Flow throws some errors in the way i use it. i couldn't find out how to use i
 
 ## Info 4 Auto-Changelog
 
+This will create a Auotmatic Changelog for your Repo.
+
 ## Console Commands
 
 Commands are defined in Consolecommands.ts
