@@ -23,7 +23,6 @@ screeps.json
 
 #Debug-Changelog data
 changelog-data.json
-CHANGELOG.md
 
 # ScreepsServer data from integration tests
 /server

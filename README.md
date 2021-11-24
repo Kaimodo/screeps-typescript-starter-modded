@@ -20,7 +20,17 @@ JS2Flow throws some errors in the way i use it. i couldn't find out how to use i
 
 ## Info 4 Auto-Changelog
 
-This will create a Auotmatic Changelog for your Repo.
+This will create a Auotmatic Changelog for your Repo. U can use `feature:`, `fix:` & `break:` as Keywords for your Commits. So u can do something like this (We pretend you have just pushed ur Code to maybe Github):
+
+- Run `npm version patch` Or use the `npm run Upd-patch`
+- Change Your Code like You want.
+- Do a commit with maybe "feature: No more fixes" as Message.
+- Do `npm run changelog`
+- Maybe do some other Changes.
+- Again commit and do `npm run changelog`
+- Maybe now it's time to send your Code to Github, so do a `git pull`
+- Run `npm version patch` Or use the `npm run Upd-patch` or maybe `npm version minor`
+- Start over.
 
 ## Console Commands
 
