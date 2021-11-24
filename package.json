@@ -21,7 +21,7 @@
     "rollup-help": "rollup --help",
     "lint": "eslint \"src/**/*.ts\"",
     "build": "rollup -c",
-    "Upd Patch": "npm version patch & changelog",
+    "Upd Patch": "npm version patch && changelog",
     "Upd Minor": "npm version minor",
     "Upd Mayor": "npm version mayor",
     "push-main": "rollup -c --environment DEST:main",
