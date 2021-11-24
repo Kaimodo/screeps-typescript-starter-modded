@@ -39,8 +39,8 @@
     "watch-season": "rollup -cw --environment DEST:season",
     "watch-sim": "rollup -cw --environment DEST:sim",
     "Create Flow-Chart": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./createSVG.ps1",
-    "changelog": "auto-changelog --template hbs/changelog-template.hbs -p -u --commit-limit false",
-    "changelog-debug": "auto-changelog --template hbs/changelog-template.hbs -p --template json --output hbs/changelog-data.json"
+    "changelog": "auto-changelog --template ./hbs/changelog-template.hbs -p -u --commit-limit false",
+    "changelog-debug": "auto-changelog --template /hbs/changelog-template.hbs -p --template json --output hbs/changelog-data.json"
   },
   "auto-changelog": {
     "commitLimit": false,
