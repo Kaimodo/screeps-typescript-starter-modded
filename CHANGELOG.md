@@ -2,6 +2,12 @@
 v1.2.1
 [2021-11-24]
 
+### Features
+
+*
+Changelog
+([`9157318`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/9157318a6963b31dce6786e0944c30a23b9bae5d))
+1-Files changed|12-Insertions|1-Deletions
 
 
 
