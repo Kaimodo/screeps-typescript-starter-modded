@@ -1,5 +1,12 @@
 #
-1.2.0
+v1.2.1
+[2021-11-24]
+
+
+
+
+#
+v1.2.1
 [2021-11-24]
 
 ### Features
@@ -8,6 +15,10 @@
 Test auto-changelog
 ([`e5b278e`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/e5b278e942fb2a580b54a7816b9002772fcf84a7))
 4-Files changed|83-Insertions|14-Deletions
+*
+Working on changelog
+([`8404f2b`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/8404f2b801f6283b04897f38f7a559381f8b7f4b))
+2-Files changed|12-Insertions|2-Deletions
 *
 Another Test. subject: Why this?
 ([`2455635`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/2455635892acbd46e98978808eb8f8c7e434aacb))
