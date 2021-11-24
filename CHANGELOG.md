@@ -1,9 +1,46 @@
 #
-v1.2.1
+v1.2.4
+[2021-11-24]
+
+
+
+
+#
+v1.2.4
 [2021-11-24]
 
 ### Features
 
+*
+Test
+([`72ab208`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/72ab2085313a4850402f6bee908de0a90759c07e))
+1-Files changed|1-Insertions|1-Deletions
+
+
+
+#
+v1.2.3
+[2021-11-24]
+
+### Features
+
+*
+test
+([`2c1f732`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/2c1f732108e77db4d34c52c812eac606f44444c5))
+1-Files changed|1-Insertions|1-Deletions
+
+
+
+#
+v1.2.2
+[2021-11-24]
+
+### Features
+
+*
+Testing still acl
+([`7a50cdb`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/7a50cdb6a9b1419b0f17f549eacd263837bc7ee6))
+4-Files changed|10-Insertions|4-Deletions
 *
 Changelog
 ([`9157318`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/9157318a6963b31dce6786e0944c30a23b9bae5d))
