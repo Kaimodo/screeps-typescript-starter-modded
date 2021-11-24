@@ -1,9 +1,22 @@
 {
   "name": "screeps-typescript-starter-modded",
-  "version": "1.2.3",
+  "version": "1.2.0",
   "description": "Screeps TS starter slightly modded",
   "main": "index.js",
   "//": "If you add or change the names of destinations in screeps.json, make sure you update these scripts to reflect the changes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaimodo/screeps-typescript-starter-modded.git"
+  },
+  "author": "Kaimodo",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Kaimodo/screeps-typescript-starter-modded/issues"
+  },
+  "homepage": "https://github.com/Kaimodo/screeps-typescript-starter-modded#readme",
+  "engines": {
+    "node": "8.x || 12.x"
+  },
   "scripts": {
     "rollup-help": "rollup --help",
     "lint": "eslint \"src/**/*.ts\"",
@@ -25,20 +38,23 @@
     "watch-Onlinepserver": "rollup -cw --environment DEST:onlinepserver",
     "watch-season": "rollup -cw --environment DEST:season",
     "watch-sim": "rollup -cw --environment DEST:sim",
-    "Create Flow-Chart": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./createSVG.ps1"
+    "Create Flow-Chart": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./createSVG.ps1",
+    "changelog": "auto-changelog --template changelog-template.hbs -p -u --commit-limit false",
+    "changelog-debug": "auto-changelog --template changelog-template.hbs -p --template json --output changelog-data.json"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kaimodo/screeps-typescript-starter-modded.git"
-  },
-  "author": "",
-  "license": "Unlicense",
-  "bugs": {
-    "url": "https://github.com/Kaimodo/screeps-typescript-starter-modded/issues"
-  },
-  "homepage": "https://github.com/Kaimodo/screeps-typescript-starter-modded#readme",
-  "engines": {
-    "node": "8.x || 12.x"
+  "auto-changelog": {
+    "commitLimit": false,
+    "unreleased": true,
+    "issueUrl": "https://github.com/Kaimodo/screeps-typescript-starter-modded/issues/{id}",
+    "replaceText": {
+      "[Ff]eature:": "",
+      "[Ff]ix:": "",
+      "[Bb]reak:": "",
+      "([A-Z]+-\\d+)": "[$1](https://github.com/Kaimodo/screeps-typescript-starter-modded/issues/$1) - "
+    },
+    "includeBranch": [
+      "master"
+    ]
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
@@ -56,6 +72,7 @@
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "@typescript-eslint/typescript-estree": "^4.29.1",
+    "auto-changelog": "^2.3.0",
     "chai": "^4.2.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
