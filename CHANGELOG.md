@@ -1,5 +1,18 @@
 #
-v1.2.7
+v1.2.8
+[2021-11-24]
+
+### Features
+
+*
+Changed ReadMe
+([`9a9d1b8`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/9a9d1b8f04643ab3508570cf970549bd1487986c))
+1-Files changed|2-Insertions|0-Deletions
+
+
+
+#
+v1.2.8
 [2021-11-24]
 
 ### Features
@@ -12,6 +25,14 @@ changed Package.json
 Testing Automation
 ([`4f8cc9f`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/4f8cc9f206f135b07adb7648fb0015687a7d7d7c))
 2-Files changed|7-Insertions|1-Deletions
+*
+Testing
+([`aad64da`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/aad64dac0a24ebb4bfef3b3300ef768b43b40e97))
+1-Files changed|2-Insertions|2-Deletions
+*
+Testcl
+([`f2d842e`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/f2d842ef3dd1eb0351bcf91a92b414487cd07b0c))
+1-Files changed|4-Insertions|0-Deletions
 
 
 
