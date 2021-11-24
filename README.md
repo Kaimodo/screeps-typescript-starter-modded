@@ -10,6 +10,8 @@ Logger from ([resir014](https://github.com/resir014/Stonehenge))
 
 JS2FlowChart from ([Bogdan-Lyashenko](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart))
 
+Rollup-plugin Visualizer from ([btd](https://github.com/btd/rollup-plugin-visualizer))
+
 ## Info 4 JS2Flow
 
 JS2Flow throws some errors in the way i use it. i couldn't find out how to use it "correct". I start it via npm which executes a Powershell-Script. But basically it works. There is some error with "optional chaining" in flow2js. i tryed to install those plugins manualy but it won't work. Well, this is thought to use with js not ts...
