@@ -8,6 +8,10 @@ v1.2.7
 changed Package.json
 ([`e6cdd8b`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/e6cdd8beefe7b080ce68f313bdd3e1527214ce80))
 2-Files changed|16-Insertions|3-Deletions
+*
+Testing Automation
+([`4f8cc9f`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/4f8cc9f206f135b07adb7648fb0015687a7d7d7c))
+2-Files changed|7-Insertions|1-Deletions
 
 
 
