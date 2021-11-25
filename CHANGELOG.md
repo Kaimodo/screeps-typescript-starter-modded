@@ -1,7 +1,24 @@
 #
-v1.2.11
+v1.2.12
 [2021-11-24]
 
+
+
+
+#
+v1.2.12
+[2021-11-24]
+
+### Features
+
+*
+Changed Read.me
+([`94c41c9`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/94c41c982c9bcf5d9159bf049270e23d134bea35))
+2-Files changed|32-Insertions|2-Deletions
+*
+Finaly changed readme for ACL
+([`5093abe`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/5093abe3ff0cf2ccdc4306d16f5287a423be0293))
+1-Files changed|1-Insertions|1-Deletions
 
 
 

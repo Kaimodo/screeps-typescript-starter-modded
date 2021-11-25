@@ -14,6 +14,8 @@ Rollup-plugin Visualizer from ([btd](https://github.com/btd/rollup-plugin-visual
 
 Auto-changelog from ([CookPete](https://github.com/CookPete/auto-changelog))
 
+TypeDoc from ([TypeStrong](https://github.com/TypeStrong/typedoc))
+
 ## Info 4 JS2Flow
 
 JS2Flow throws some errors in the way i use it. i couldn't find out how to use it "correct". I start it via npm which executes a Powershell-Script. But basically it works. There is some error with "optional chaining" in flow2js. i tryed to install those plugins manualy but it won't work. Well, this is thought to use with js not ts...
@@ -21,6 +23,10 @@ JS2Flow throws some errors in the way i use it. i couldn't find out how to use i
 ## Info 4 Auto-Changelog
 
 This will create a Auotmatic Changelog for your Repo. U can use `feature:`, `fix:` & `break:` as Keywords for your Commits. So whenever u commit something u do `npm run changelog` **before** you push it. So your changelog will be created with that commit message. And after you pulled your code, or whenever you want to increase your Version number you can run `npm run Upd-patch` or minor/mayor. Or use `npm version minor` for x-ample. If u use `npm run Upd-x` the Changelog will be auto-updated.
+
+## TypeDoc
+
+Use `npm run create-typedoc-files` to Create your Documentation. Files will be stored in `./docs`
 
 ## Console Commands
 
