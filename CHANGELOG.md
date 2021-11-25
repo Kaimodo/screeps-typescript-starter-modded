@@ -1,7 +1,20 @@
 #
-v1.2.12
-[2021-11-24]
+v1.2.13
+[2021-11-25]
 
+
+
+
+#
+v1.2.13
+[2021-11-25]
+
+### Features
+
+*
+Added TypeDoc Support.
+([`d0b5eb2`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/d0b5eb2e28c2a77114cb2ca74ced05169ff0cbaf))
+38-Files changed|1035-Insertions|24-Deletions
 
 
 

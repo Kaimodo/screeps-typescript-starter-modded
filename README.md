@@ -1,4 +1,4 @@
-# Screeps21_kAI3
+# screeps-typescript-starter-modded
 
 ![ ](https://screeps.com/images/logotype-animated.svg)
 
@@ -22,7 +22,7 @@ JS2Flow throws some errors in the way i use it. i couldn't find out how to use i
 
 ## Info 4 Auto-Changelog
 
-This will create a Auotmatic Changelog for your Repo. U can use `feature:`, `fix:` & `break:` as Keywords for your Commits. So whenever u commit something u do `npm run changelog` **before** you push it. So your changelog will be created with that commit message. And after you pulled your code, or whenever you want to increase your Version number you can run `npm run Upd-patch` or minor/mayor. Or use `npm version minor` for x-ample. If u use `npm run Upd-x` the Changelog will be auto-updated.
+This will create a Auotmatic Changelog for your Repo. U can use `patch`, `feature:`, `fix:` & `break:` as Keywords for your Commits. So whenever u commit something u do `npm run changelog` **before** you push it. So your changelog will be created with that commit message. And after you pulled your code, or whenever you want to increase your Version number you can run `npm run Upd-patch` or minor/mayor. Or use `npm version minor` for x-ample. If u use `npm run Upd-x` the Changelog will be auto-updated.
 
 ## TypeDoc
 

@@ -15,4 +15,3 @@ module.exports = {
     theme: 'markdown',
     hideGenerator: true
   };
-

@@ -8,7 +8,7 @@
     commits
     heading="### Features"
     message="(feature: )|(Feature: )"
-    exclude="(fix: )|(Fix: )|(break: )|(Break: )"
+    exclude="(fix: )|(Fix: )|(break: )|(Break: )|(patch: )|(Patch: )"
   }}
     *
     {{subject}}
@@ -21,7 +21,7 @@
     commits
     heading="### Fixes"
     message="(fix: )|(Fix: )"
-    exclude="(break: )|(Break: )|(Feature: )|(feature: )"
+    exclude="(break: )|(Break: )|(Feature: )|(feature: )|(patch: )|(Patch: )"
   }}
     *
     {{subject}}
@@ -34,12 +34,23 @@
     commits
     heading="### Breaking changes"
     message="(break: )|(Break: )"
-    exclude="(fix: )|(Fix: )|(Feature: )|(feature: )"
+    exclude="(fix: )|(Fix: )|(Feature: )|(feature: )|(patch: )|(Patch: )"
   }}
     *
     {{subject}}
     ([`{{shorthash}}`]({{href}}))
     {{files}}-Files changed|{{insertions}}-Insertions|{{deletions}}-Deletions
   {{/commit-list}}
-
+  {{! user patch: or Patch: }}
+  {{#commit-list
+    commits
+    heading="### Little Patch"
+    message="(patch: )|(Patch: )"
+    exclude="(fix: )|(Fix: )|(Feature: )|(feature: )|(break: )|(Break: )"
+  }}
+    *
+    {{subject}}
+    ([`{{shorthash}}`]({{href}}))
+    {{files}}-Files changed|{{insertions}}-Insertions|{{deletions}}-Deletions
+  {{/commit-list}}
 {{/each}}
