@@ -4,17 +4,19 @@
 
 # What me added
 
-Screeps-Inscribe from ([resir014](https://github.com/resir014/screeps-inscribe))
+- Screeps-Inscribe from ([resir014](https://github.com/resir014/screeps-inscribe))
 
-Logger from ([resir014](https://github.com/resir014/Stonehenge))
+- Logger from ([resir014](https://github.com/resir014/Stonehenge))
 
-JS2FlowChart from ([Bogdan-Lyashenko](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart))
+- JS2FlowChart from ([Bogdan-Lyashenko](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart))
 
-Rollup-plugin Visualizer from ([btd](https://github.com/btd/rollup-plugin-visualizer))
+- Rollup-plugin Visualizer from ([btd](https://github.com/btd/rollup-plugin-visualizer))
 
-Auto-changelog from ([CookPete](https://github.com/CookPete/auto-changelog))
+- Auto-changelog from ([CookPete](https://github.com/CookPete/auto-changelog))
 
-TypeDoc from ([TypeStrong](https://github.com/TypeStrong/typedoc))
+- TypeDoc from ([TypeStrong](https://github.com/TypeStrong/typedoc))
+
+- Grafana-Support from ([screeps-grafana](https://github.com/screepers/screeps-grafana)) and ([devnixs](https://github.com/devnixs/screeps-stats-grafana))
 
 ## Info 4 JS2Flow
 
@@ -22,15 +24,25 @@ JS2Flow throws some errors in the way i use it. i couldn't find out how to use i
 
 ## Info 4 Auto-Changelog
 
-This will create a Auotmatic Changelog for your Repo. U can use `patch`, `feature:`, `fix:` & `break:` as Keywords for your Commits. So whenever u commit something u do `npm run changelog` **before** you push it. So your changelog will be created with that commit message. And after you pulled your code, or whenever you want to increase your Version number you can run `npm run Upd-patch` or minor/mayor. Or use `npm version minor` for x-ample. If u use `npm run Upd-x` the Changelog will be auto-updated.
+This will create a Automatic Changelog for your Repo. U can use `patch`, `feature:`, `fix:` & `break:` as Keywords for your Commits. So whenever u commit something u do `npm run changelog` **before** you push it. So your changelog will be created with that commit message. And after you pulled your code, or whenever you want to increase your Version number you can run `npm run Upd-patch` or minor/mayor. Or use `npm version minor` for x-ample. If u use `npm run Upd-x` the Changelog will be auto-updated.
 
 ## TypeDoc
 
 Use `npm run create-typedoc-files` to Create your Documentation. Files will be stored in `./docs`
 
+## Grafana
+
+Import `./grafana/dashBoard_1.json` as a new DashBoard and all should be working. The Info comes from `./src/tools/stats.ts`. Import Statsmanager and call at the End of your Main-loop -->
+
+```js
+import { StatsManager } from "./tools/stats";
+
+StatsManager.runForAllRooms();
+```
+
 ## Console Commands
 
-Commands are defined in Consolecommands.ts
+Commands are defined in `Consolecommands.ts`
 Test if they work by typing in
 
 ```bash
@@ -38,6 +50,10 @@ cc.test()
 ```
 
 in the Console.
+
+## Changelog
+
+The Changelog can be found ([here](./CHANGELOG.md))
 
 ## Helper
 

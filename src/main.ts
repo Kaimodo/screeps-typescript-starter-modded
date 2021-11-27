@@ -17,6 +17,8 @@ import { Emoji, Splash } from './tools/Emoji';
 
 import * as Orga from "./organize.json";
 
+import { StatsManager } from './tools/stats';
+
 
 
 //New Script loaded
@@ -47,5 +49,6 @@ export const loop = ErrorMapper.wrapLoop(() => {
 
     Tools.log_info()
     Tools.ClearNonExistingCreeMemory();
+    StatsManager.runForAllRooms();
   });
 });

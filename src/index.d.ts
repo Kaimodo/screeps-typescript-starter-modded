@@ -4,12 +4,14 @@ interface Memory {
     date?: string;
     uuid: number;
     log: any;
+    stats: any;
 }
 
 interface CreepMemory {
     role: string;
     room: string;
     working?: boolean;
+    homeRoom: string;
 }
 
 interface FlagMemory { [name: string]: any }
