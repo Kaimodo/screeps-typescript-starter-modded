@@ -6,7 +6,7 @@ import { USE_PROFILER } from "config";
 
 import * as Inscribe from "screeps-inscribe";
 
-import * as Logger from "tools/logger/logger";
+import { log } from "tools/logger/logger";
 import {ENABLE_DEBUG_MODE} from "config";
 
 import * as Tools from "tools/tools"
@@ -26,7 +26,7 @@ console.log(`[${Inscribe.color("New Script loaded", "red")}] ${Emoji.reload}`);
 
 
 if (USE_PROFILER) {
-  Logger.log.info("Profiler an: "+ USE_PROFILER);
+  log.info("Profiler an: "+ USE_PROFILER);
   Profiler.enable();
 }
 
@@ -43,6 +43,11 @@ export const loop = ErrorMapper.wrapLoop(() => {
 
     global.cc = ConsoleCommands;
     console.log(`Current game tick is ${Game.time}`);
+    log.debug("db");
+    log.warning("warn");
+    log.info("inf");
+    log.error("err");
+
 
     // Main Loop here:
 

@@ -1,6 +1,8 @@
 import * as Config from "../../config";
 import { LogLevel } from "./logLevel";
 import { SourceMapConsumer } from "source-map";
+import { Emoji } from '../Emoji';
+
 
 // <caller> (<source>:<line>:<column>)
 const stackLineRe = /([^ ]*) \(([^:]*):([0-9]*):([0-9]*)\)/;
@@ -178,16 +180,16 @@ export class Log {
     const out: string[] = [];
     switch (level) {
       case LogLevel.ERROR:
-        out.push(color("ERROR  ", "red"));
+        out.push(color(`${Emoji.cross}ERROR  `, "red"));
         break;
       case LogLevel.WARNING:
-        out.push(color("WARNING", "yellow"));
+        out.push(color(`${Emoji.warn}WARNING`, "yellow"));
         break;
       case LogLevel.INFO:
-        out.push(color("INFO   ", "green"));
+        out.push(color(`${Emoji.info}INFO   `, "green"));
         break;
       case LogLevel.DEBUG:
-        out.push(color("DEBUG  ", "gray"));
+        out.push(color(`${Emoji.debug}DEBUG  `, "gray"));
         break;
       default:
         break;
