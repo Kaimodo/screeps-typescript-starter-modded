@@ -30,9 +30,12 @@ if (USE_PROFILER) {
   Profiler.enable();
 }
 
+// Clear Memory
+Tools.clearMemory()
+
 // Get Script loading time
-const elapsedCPU = Game.cpu.getUsed() - startCpu;
 Splash();
+const elapsedCPU = Game.cpu.getUsed() - startCpu;
 console.log(`[${Inscribe.color("Script Loading needed: ", "skyblue") + elapsedCPU.toFixed(2) + " Ticks"}]`);
 
 // When compiling TS to JS and bundling with rollup, the line numbers and file names in error messages change

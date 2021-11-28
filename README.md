@@ -8,6 +8,8 @@
 
 - Logger from ([resir014](https://github.com/resir014/Stonehenge))
 
+- Traveler-TS from ([suiramdev](https://github.com/suiramdev/screeps) origin Traveler from ([bonzaiferroni](https://github.com/bonzaiferroni/Traveler)
+
 - JS2FlowChart from ([Bogdan-Lyashenko](https://github.com/Bogdan-Lyashenko/js-code-to-svg-flowchart))
 
 - Rollup-plugin Visualizer from ([btd](https://github.com/btd/rollup-plugin-visualizer))

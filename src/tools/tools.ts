@@ -23,9 +23,9 @@ export function ClearNonExistingCreeMemory() {
 }
 /**
  * clear Memory
- * @export _clearMemory
+ * @export clearMemory
  */
- export function _clearMemory(): void {
+ export function clearMemory(): void {
   for (const name in Memory.flags) {
     if (!(name in Game.flags)) {
       delete Memory.flags[name];
@@ -87,4 +87,57 @@ export const forEachCreep = (func: (item: Creep) => void): void => {
  */
 export function distance(start: { x: number; y: number }, end: { x: number; y: number }): number {
   return Math.max(Math.abs(start.x - end.x), Math.abs(start.y - end.y));
+}
+
+/**
+ * The maximum is exclusive and the minimum is inclusive
+ * @export getRandomInt
+ * @param {number} min Minimal Number
+ * @param {number} max Maximal Number
+ * @return {*}  {number}
+ */
+export function getRandomInt(min: number, max: number): number {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+/**
+ * Calculate the Distance betweens two Room-Positions
+ * @export CalculateDistanceBetweenPoints
+ * @param {RoomPosition} posA First Position
+ * @param {RoomPosition} posB Second Position
+ * @return {*}  {number}
+ */
+export function CalculateDistanceBetweenPoints(posA: RoomPosition, posB: RoomPosition): number {
+  const a = Math.abs(posA.x - posB.x);
+  const b = Math.abs(posA.y - posB.y);
+  const c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+  return c;
+}
+
+/**
+ * Returns the reverse direction of Imput
+ * @param direction The given Direction
+ * @returns direction
+ */
+export const getReverseDirection = (direction: DirectionConstant) => {
+  switch (direction) {
+    case TOP:
+      return BOTTOM;
+    case TOP_RIGHT:
+      return BOTTOM_LEFT;
+    case RIGHT:
+      return LEFT;
+    case BOTTOM_RIGHT:
+      return TOP_LEFT;
+    case BOTTOM:
+      return TOP;
+    case BOTTOM_LEFT:
+      return TOP_RIGHT;
+    case LEFT:
+      return RIGHT;
+    case TOP_LEFT:
+      return BOTTOM_RIGHT;
+  }
 }

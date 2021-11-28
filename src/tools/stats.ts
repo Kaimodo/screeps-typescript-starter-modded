@@ -3,11 +3,13 @@ import * as Config from "config";
 import { log } from "./logger/logger";
 import { Emoji } from "./Emoji";
 
-/*
-log.debug(`${Emoji.debug}`)
-*/
 
 // https://github.com/devnixs/screeps-stats-grafana
+
+/**
+ * Returns all Rooms you have
+ * @return {*} Rooms
+ */
 function getMyRooms() {
     return Object.keys(Game.rooms)
       .map(i => Game.rooms[i])
@@ -15,6 +17,12 @@ function getMyRooms() {
       .map(i => Game.rooms[i.name]);
   }
 
+/**
+ *
+ *
+ * @export StatsManager
+ * @class StatsManager
+ */
 export class StatsManager {
       static runForAllRooms() {
           if (Game.time % 13 > 0) {
