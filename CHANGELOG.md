@@ -1,7 +1,19 @@
 #
-v1.2.14
-[2021-11-27]
+v1.2.15
+[2021-11-28]
 
+
+
+#
+v1.2.15
+[2021-11-28]
+
+### Features
+
+*
+Added clearMemory
+([`84ce61f`](https://github.com/Kaimodo/screeps-typescript-starter-modded/commit/84ce61fdcef105271ae4d6113e544bc5187583a4))
+8-Files changed|812-Insertions|23-Deletions
 
 
 #
